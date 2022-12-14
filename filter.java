@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-
 public class filter<Laptop> {
 
     public ArrayList<Object> brands;
@@ -31,7 +30,6 @@ public class filter<Laptop> {
         this.color = color;
     }
 
-    
     public List<Laptop> filter(Set<Laptop> laptop) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Параметры ноутбука.");
@@ -44,7 +42,7 @@ public class filter<Laptop> {
         System.out.println("Цвет ноутбука\n");
         String enterColor = scan.nextLine();
 
-        
+         
 
         List<Laptop> listLaptop = new ArrayList<>();
         for (Laptop tempLaptop : laptop) {
